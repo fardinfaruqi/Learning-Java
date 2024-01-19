@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Literals",
+            "request": "launch",
+            "mainClass": "Literals",
+            "projectName": "Learning-Java_e56da78f"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
