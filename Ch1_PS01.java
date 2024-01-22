@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Ch1_PS01 {
   public static void main(String[] args) {
     // Sum 3 numbers
@@ -12,5 +14,13 @@ public class Ch1_PS01 {
 
     float cgpa = (subject1 + subject2 + subject3) / 30.0f;
     System.out.println("CGPA : " + cgpa);
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("What's your name? ");
+    System.out.println("Hello " + sc.nextLine() + "!!!");
+
+    System.out.print("Enter a number: ");
+    System.out.println("Boolean: " + sc.hasNextInt());
   }
 };

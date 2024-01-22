@@ -16,7 +16,7 @@
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "console": "externalTerminal"
+            "console": "externalTerminal",
         }
     ]
 }
