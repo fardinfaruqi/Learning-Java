@@ -22,5 +22,7 @@ public class Ch1_PS01 {
 
     System.out.print("Enter a number: ");
     System.out.println("Boolean: " + sc.hasNextInt());
+
+    sc.close();
   }
 };

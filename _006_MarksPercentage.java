@@ -29,5 +29,7 @@ public class _006_MarksPercentage {
 
         System.out.println("You got " + totalScore + " out of " + percetage);
         System.out.println("Percetage is " + ((totalScore / percetage) * 100) + "%");
+
+        sc.close();
     }
 }

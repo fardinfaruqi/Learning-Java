@@ -51,5 +51,7 @@ public class _019_Ch4PS {
         }
 
         System.out.println("The total tax paid by the employee is " + tax + "lakh/s");
+
+        sc.close();
     }
 }
