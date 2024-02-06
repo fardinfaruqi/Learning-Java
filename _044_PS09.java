@@ -19,7 +19,7 @@ class Cylinder {
     private int radius;
     private int height;
 
-    public Cylinder(int a, int b) {
+    Cylinder(int a, int b) {
         this.radius = a;
         this.height = b;
     }
