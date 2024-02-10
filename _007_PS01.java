@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ch1_PS01 {
+public class _007_PS01 {
   public static void main(String[] args) {
     // Sum 3 numbers
     int a = 55;

@@ -1,4 +1,4 @@
-public class Ch2_Operators {
+public class _008_Operators {
     public static void main(String args[]) {
         int a = 4;
         int b = 6 + a;
