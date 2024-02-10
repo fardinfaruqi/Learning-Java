@@ -1,15 +1,15 @@
 public class _049_dynamic_method_dispatch {
     public static void main(String[] args) {
-        // Phone obj = new Phone();
-        // SmartPhone smobj = new SmartPhone();
-        // obj.On();
+        Phone obj = new Phone();
+        SmartPhone smobj = new SmartPhone();
+        obj.On();
 
-        Phone obj = new SmartPhone(); // Allowed
+        Phone obj1 = new SmartPhone(); // Allowed
         // SmartPhone obj2 = new Phone(); // Not Allowed
 
-        obj.showTime();
-        obj.On();
-        // obj.music(); // Not allowed
+        obj1.showTime();
+        obj1.On();
+        // obj1.music(); // Not allowed
     }
 }
 
