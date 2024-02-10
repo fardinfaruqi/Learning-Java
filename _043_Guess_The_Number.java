@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class _043_exercise3 {
+public class _043_Guess_The_Number {
     public static void main(String[] args) {
         GuessTheNumber fardin = new GuessTheNumber();
         fardin.guess();
