@@ -1,15 +1,15 @@
-public class _057_default_methods {
+public class _059_Polymorphism {
     public static void main(String[] args) {
-        MySmartPhone2 ms = new MySmartPhone2();
-        String[] ar = ms.getNetwork();
-        for (String item : ar) {
-            System.out.println(item);
-        }
-        ms.record4KVideo();
+
+        MyCamera2 cam1 = new MySmartPhone2(); /*
+                                               * This is a smartphone being used as a camera, Cannot use it as a
+                                               * smartphone
+                                               */
+        // cam1.getNetwork(); //Not allowed
     }
 }
 
-interface MyCamera {
+interface MyCamera2 {
     void takeSnap();
 
     void recordVideo();
@@ -24,13 +24,13 @@ interface MyCamera {
     }
 }
 
-interface MyWifi {
+interface MyWifi2 {
     String[] getNetwork();
 
     void connectToNetwork(String network);
 }
 
-class MyCellPhone {
+class MyCellPhone2 {
     void callNumber(int phoneNUmber) {
         System.out.println("Calling" + phoneNUmber);
     }
@@ -58,12 +58,4 @@ class MySmartPhone2 extends MyCellPhone2 implements MyCamera2, MyWifi2 {
     public void connectToNetwork(String network) {
         System.out.println("Connecting to " + network);
     }
-
-    public void sayHello() {
-        // Code...
-    } // Doesn't access the implemented interface's sayHello method as that is private.
-
-    // public void record4KVideo() {
-    //      System.out.println("Recording in 4K... in class");
-    // }
 }
