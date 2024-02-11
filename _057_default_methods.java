@@ -5,6 +5,7 @@ public class _057_default_methods {
         for (String item : ar) {
             System.out.println(item);
         }
+        ms.record4KVideo();
     }
 }
 
@@ -12,6 +13,15 @@ interface MyCamera {
     void takeSnap();
 
     void recordVideo();
+
+    private void sayHello() {
+        System.out.println("Hello..!");
+    }
+
+    default void record4KVideo() {
+        sayHello();
+        System.out.println("Recording in 4K...");
+    }
 }
 
 interface MyWifi {
@@ -48,4 +58,12 @@ class MySmartPhone extends MyCellPhone implements MyCamera, MyWifi {
     public void connectToNetwork(String network) {
         System.out.println("Connecting to " + network);
     }
+
+    public void sayHello() {
+        // Code...
+    } // Doesn't access the implemented interface's sayHello method as that is private.
+
+    // public void record4KVideo() {
+    //      System.out.println("Recording in 4K... in class");
+    // }
 }
