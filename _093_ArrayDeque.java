@@ -8,5 +8,6 @@ public class _093_ArrayDeque {
         ad1.add(1);
         ad1.addFirst(5);
         System.out.println(ad1.getFirst() + " " + ad1.getLast());
+        System.out.println(ad1);
     }
 }
